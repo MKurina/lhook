@@ -1,0 +1,3 @@
+[submodule "disas-x86_64"]
+        path = disas-x86_64
+        url = https://github.com/MKurina/disas-x86_64
