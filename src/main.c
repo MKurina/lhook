@@ -6,7 +6,7 @@
 #include "../include/hooks.h"
 #ifndef UAPI_H
 #define UAPI_H
-#include "../disass/include/uapi.h"
+#include "../disas-x86_64/include/uapi.h"
 #endif
 
 static int _wr_init(void *addr, __u16 page_num);
