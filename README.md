@@ -9,5 +9,4 @@ make
 LD_PRELOAD=./main.o ip a
 ```
 ### Notes
-hook_fix_orig is incomplete, in case of istructions with immediate of size of less than the new immediate.
-Which does call for a whole new project.
+```hook_fix_orig``` is incomplete - in case of istructions with imm (immediate) size less than the new (patched) one.
