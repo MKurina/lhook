@@ -40,7 +40,7 @@ __s64 hook_fix_orig(void *stub, void *addr) {
 		__u64 imm = 0;
 		get_rip_ptr_addr(&in, src, &imm);
 		if (!!imm) {
-			if (change_ptr(&in, (dst - src) - (imm - src) - in.in_sz, CHNG_REL) == -1)
+			if (change_ptr(&in, (imm - src + ( (__u64)ptr+i - src )) - in.in_sz, CHNG_REL) == -1)
 				return -1;
 		}
 		__u8 ret = assemble(&in, ptr + i);
