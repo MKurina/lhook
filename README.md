@@ -8,3 +8,6 @@ In ```hook.c```  can be inserted hooks using ```NIX_register(<library name>, <sy
 make
 LD_PRELOAD=./main.o ip a
 ```
+### Notes
+hook_fix_orig is incomplete, in case of istructions with immediate of size of less than the new immediate.
+Which does call for a whole new project.
